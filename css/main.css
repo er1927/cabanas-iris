@@ -17,9 +17,9 @@ html {
   line-height: 1.4;
 }
 
-/* * {
+ * {
   outline: dotted gray;
-}  */
+}  
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -454,18 +454,117 @@ input[type=submit] {
    Modify as content requires.
    ========================================================================== */
 
+   /* - - - TABLET STYLES - - - */
+
+
 @media only screen and (min-width: 768PX) {
   
 
 /* - - - MAIN PAGE STYLES - - - */
 
+header {
+  justify-content: space-around;
+}
+
+header nav  {
+  display: inline;
+  align-self: flex-end;
+  word-spacing: 1em;
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main h2 {
+  font-size: 2em;
+  padding:2em;
+}
+
+/* - - - CABINS PAGE STYLES - - - */
+
+.cabin-title h3 {
+  padding-left:1em;
+}
+.rev h2 {
+  padding-left:.5em;
+}
 /* - - - 4-PAX, 5-PAX, 6-PAX PAGE STYLES - - - */
 
 /* - - - ABOUT PAGE STYLES - - - */
 
+.about-container {
+  display: flex;
+  flex-flow: row wrap;
+ align-items: flex-start;
+  justify-content: space-around;
+}
+.about-container h2 {
+  width:100%;
+}
+.about-img {
+  
+}
+.about-text {
+  width:50%;
+}
 /* - - - INQUIRY STYLES - - - */
 
+.form {
+  
+}
+
+input[type=text], select {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 16px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 16px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+input[type=submit] {
+  width: 400px;
+  background-color: #22311a;
+  color: white;
+  padding: 14px 20px;
+  margin: 16px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 /* - - - LOCATION STYLES - - - */
+
+.map-container {
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: center;
+  background-color: #7a722a;
+}
+.map {
+  width:30%;
+  padding: 2em;
+}
+
+.map-embeded {
+  width:70%;
+}
 
 /* - - - SERVICES STYLES - - - */
 

@@ -17,9 +17,9 @@ html {
   line-height: 1.4;
 }
 
- * {
+/* * {
   outline: dotted gray;
-}  
+}  */
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -94,13 +94,11 @@ textarea {
 
 body {
   background-color:#404625;
-  font-family: 'raleway', sans-serif;
-  font-size: 1em;
   color: antiquewhite;
   display: flex;
   flex-direction: column;
-  
-  
+  font-family: 'raleway', sans-serif;
+  font-size: 1em;
 }
 
 header {
@@ -114,24 +112,19 @@ h1 {
 }
 
 nav {
-  list-style-type: none;
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: center;
   font-size: 1.2em;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
-nav li {
-  display: inline;
-  align-self: center;
-}
 
 a {
+  color:antiquewhite;
   text-decoration: none;
-  color:antiquewhite
 }
-
 
 header h1 {
   font-family: 'Lobster';
@@ -140,24 +133,24 @@ header h1 {
 
 .main {
   background-color:#7a722a;
-  padding:1em;
-  gap:.5em;
   display: flex;
   flex-flow: column wrap;
   font-size: 3em;
+  gap:.5em;
+  padding:1em;
   text-align: center;
   text-shadow: 3px 3px #7a722a;
 }
 
 
 .six, .five, .four {
-background-repeat: no-repeat;
-background-position: center;
-background-size:cover;
-height:400px;
-display: flex;
-justify-items: center;
-align-items: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  height:400px;
+  justify-items: center;
 }
 
 .six {
@@ -173,13 +166,13 @@ align-items: center;
 }
 
 .rev {
+  align-items: center;
   background-color: #304625;
-  margin:0;
-  padding:2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  margin:0;
+  padding:2em;
 }
 
 .rev h2 {
@@ -191,20 +184,20 @@ align-items: center;
 }
 
 footer {
+  align-content: space-between;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: space-around;
-  align-content: space-between;
   padding:1.5em;
+  text-align: center;
 }
 
 footer h2 {
   font-family: 'Lobster';
   font-size: 3em;
+  margin:.1em 0;
   text-shadow: 1px 5px #304625;
   width:100%;
-  margin:.1em 0;
 }
 
 .social-media {
@@ -218,40 +211,40 @@ i {
 }
 
 
-
 /* - - - ABOUT PAGE STYLES - - - */
 
+
 .about-container {
+  background-color: #7a722a;
   display: flex;
   flex-direction:column ;
   flex-wrap: nowrap;
-  justify-content: space-around;
   gap: 1em;
+  justify-content: space-around;
   padding:1em;
-  background-color: #7a722a;
 }
 .about-container h2 {
   font-size: 2em;
 }
 
-
 .about-img-cont {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .about-img {
-  width: 200px;
-  height:299px;  
+  height:299px;
+  width: 200px; 
 }
 
 .about-text {
   display: flex;
-  
 }
 
+
 /* - - - CABINS PAGE STYLES - - - */
+
 
 .cabin-title {
   background-color: #7a722a;
@@ -260,7 +253,9 @@ i {
   font-size: 1.5em;
 }
 
+
 /* - - - 4-PAX, 5-PAX, 6-PAX PAGE STYLES - - - */
+
 
 .main h3 {
   font-size: 1em;
@@ -270,8 +265,8 @@ i {
   width:100%;
 }
 
-/* - - - SERVICES PAGE STYLES - - - */
 
+/* - - - SERVICES PAGE STYLES - - - */
 
 
 .services-container {
@@ -279,11 +274,11 @@ i {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin:.5em;
-  padding: 1em;
   display: flex;
   flex-flow: column nowrap;
   font-size: 1.5em;
+  margin:.5em;
+  padding: 1em;
   text-shadow: 1px 3px #304625;
 }
 
@@ -295,32 +290,36 @@ i {
 /* - - - LOCATION STYLES - - - */
 
 
-
 .map {
+  background-color: #7a722a;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #7a722a;
   padding: 1em;
 }
+
 .map h2 {
   font-size: 2em;;
 }
+
 .map-embeded {
+  height: 0;
   overflow: hidden;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   position: relative;
-  height: 0;
 }
+
 .map-embeded iframe {
-  position:absolute;
-  left: 0;
-  top: 0;
   height: 100%;
+  left: 0;
+  position:absolute;
+  top: 0;
   width: 100%;
 }
 
+
 /* - - - INQUIRY STYLES - - - */
+
 
 .form {
   display: flex;
@@ -328,47 +327,32 @@ i {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding:1em;
-  
 }
 
-input[type=text], select {
-  width: 200px;
-  padding: 12px 20px;
-  margin: 8px 4px;
-  display: inline-block;
-  border: 1px solid #ccc;
+input[type=text], select, input[type=number] {
   border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=number], select {
-  width: 200px;
-  padding: 12px 20px;
-  margin: 8px 4px;
-  display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
   box-sizing: border-box;
+  display: inline-block;
+  margin: 8px 4px;
+  padding: 12px 20px;
+  width: 200px;
 }
-
-
 
 input[type=submit] {
-  width: 400%;
   background-color: #22311a;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 4px;
-  border: none;
   border-radius: 4px;
+  border: none;
+  color: white;
   cursor: pointer;
+  margin: 8px 4px;
+  padding: 14px 20px;
+  width: 400%;
 }
 
 .inquiry {
   padding:1em;
 }
-
-
 
 /*
  * Hide visually and from screen readers
@@ -459,117 +443,114 @@ input[type=submit] {
 
 @media only screen and (min-width: 768PX) {
   
-
 /* - - - MAIN PAGE STYLES - - - */
+
 
 header {
   justify-content: space-around;
 }
 
 header nav  {
-  display: inline;
   align-self: flex-end;
+  display: inline;
   word-spacing: 1em;
 }
 
 .main {
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-
 
 .main h2 {
   font-size: 2em;
   padding:2em;
 }
 
+
 /* - - - CABINS PAGE STYLES - - - */
+
 
 .cabin-title h3 {
   padding-left:1em;
 }
+
 .rev h2 {
   padding-left:.5em;
 }
+
+
 /* - - - 4-PAX, 5-PAX, 6-PAX PAGE STYLES - - - */
+
+
 
 /* - - - ABOUT PAGE STYLES - - - */
 
+
+
 .about-container {
+  align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
- align-items: flex-start;
   justify-content: space-around;
 }
+
 .about-container h2 {
   width:100%;
 }
-.about-img {
-  
-}
+
 .about-text {
   width:50%;
 }
+
+
 /* - - - INQUIRY STYLES - - - */
 
-.form {
-  
-}
 
-input[type=text], select {
-  width: 400px;
-  padding: 12px 20px;
-  margin: 16px 8px;
-  display: inline-block;
-  border: 1px solid #ccc;
+
+input[type=text], select, input[type=number], select {
   border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=number], select {
-  width: 400px;
-  padding: 12px 20px;
-  margin: 16px 8px;
-  display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
   box-sizing: border-box;
+  display: inline-block;
+  margin: 16px 8px;
+  padding: 12px 20px;
+  width: 400px;
 }
-
-
 
 input[type=submit] {
-  width: 400px;
   background-color: #22311a;
-  color: white;
-  padding: 14px 20px;
-  margin: 16px 8px;
-  border: none;
   border-radius: 4px;
+  border: none;
+  color: white;
   cursor: pointer;
+  margin: 16px 8px;
+  padding: 14px 20px;
+  width: 400px;
 }
+
+
 /* - - - LOCATION STYLES - - - */
 
+
 .map-container {
-  display: flex;
-  
-  justify-content: space-around;
   align-items: center;
   background-color: #7a722a;
+  display: flex;
+  justify-content: space-around;
 }
+
 .map {
-  width:30%;
   padding: 2em;
+  width:30%;
 }
 
 .map-embeded {
   width:70%;
 }
 
+
 /* - - - SERVICES STYLES - - - */
 
-
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

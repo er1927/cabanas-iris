@@ -1,0 +1,34 @@
+calculadora java cabanas
+
+“Given input X, what are the steps necessary to return output Y?”
+
+cuantas personas son? 
+2, 3, 4, 5, 6
+
+cuantos dias se quedan?
+2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+
+
+const onePersonPerNight = 5000
+
+1 persona * 1 dia = 5000
+1 * (1 *5000) =
+1 persona * 2 dias(2 dias = 2* 5000) = 10000
+1 * (2*5000)
+1 persona * 3 dias(3 dias = 3*5000) = 1500
+1 * (3*5000)
+
+2 personas * 1 dia = 10000
+2 * (1 * 5000) 
+2 personas * 2 dias = 20000
+2 * (2*5000)
+2 personas * 3 dias = 30000
+2 * (3*5000)
+
+
+6 personas * 5 dias = 150000
+6 * (5 * 5000)
+
+
+
+
